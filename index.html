@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Dylan Strnad - resume</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li> <a href="index.html"> Home </a></li>
-                <li> <a href="#middle"> About Me </a></li>
-                <li> <a href="index.html"> Projects </a></li>
-                <li> <a href="index.html"> Contact </a></li>
-                <li> <a href="index.html"> Github Page </a></li>
-            </ul>
+            
         </nav>
         <div class="flex-container">
             <img height="400px" width="300px" src="images/portait.png">
@@ -23,111 +18,130 @@
                 <h1> Welcome </h1>
                 <p> I'm Dylan, a <strong>programmer</strong> and <strong>computer science student</strong> at Kent State University. </p>
                 <p>This website displays my portfolio, and tells a little more about myself!</p>
-                <a href="#my-portfolio" class="button"> See my portfolio </a>
-                <a href="#my-portfolio" class="button secondary"> See my Resume </a>
-
+                <a href="https://github.com/DylanStrnad?tab=repositories" class="button"> Github Page </a>
+                <a href="files/Resume - 9.28.25.pdf" class="button secondary"> See my Resume </a>
             </div>
         </div>
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p> Im from Marblehead, OH. I love the <strong>outdoors </strong> and <strong> fishing</strong>. I mainly fish for perch or walleye! I love <strong>video games</strong>, they inspired me to start <strong>coding</strong>. Also, I really like lifting weights, running, and biking. I enjoy an active lifestyle. </p>
-<!-- pick up here add a description about urself -->
-    </section>
-    <section >
-        <!-- <div class="grid-container">
-            <img style="grid-area: img-1" src="images/fish.png">
-            <img style="grid-area: img-2" src="images/dog.png">
-            <img style="grid-area: img-5" src="images/dog.png">
-            <img style="grid-area: img-4" src="images/dog.png">
+    <!-- <section> -->
 
 
-            
-        </div> -->
-         <div class="container">
-            <div class="gallery">
-                <figure class="gallery__item gallery__item--1">
-                    <img src="images/fish.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--2">
-                    <img src="images/ring.png" alt="Gallery image 2" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--3">
-                    <img src="images/portait.png" alt="Gallery image 3" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--4">
-                    <img src="images/dog.png" alt="Gallery image 4" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--5">
-                    <img src="images/jewelry.png" alt="Gallery image 5" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--6">
-                    <img src="images/fish.png" alt="Gallery image 6" class="gallery__img">
-                </figure>
+
+    <div class="accordion" id="accordionExample" style="width: 72.5%; margin-left: 14.25em;">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <strong>About Me</strong>
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            <section>
+                <h2>About Me</h2>
+                <p> Im from Marblehead, OH. I love the <strong>outdoors </strong> and <strong> fishing</strong>. I mainly fish for perch or walleye! I love <strong>video games</strong>, they inspired me to start <strong>coding</strong>. Also, I really like lifting weights, running, and biking. I enjoy an active lifestyle. </p>
+
+            </section>
+                 <section id="custom-gallery" >
+       
+                    <div class="container">
+                        <div class="gallery">
+                            <figure class="gallery__item gallery__item--1">
+                                <img src="images/fish.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--2">
+                                <img src="images/ring.png" alt="Gallery image 2" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--3">
+                                <img src="images/portait.png" alt="Gallery image 3" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--4">
+                                <img src="images/dog.png" alt="Gallery image 4" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--5">
+                                <img src="images/jewelry.png" alt="Gallery image 5" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--6">
+                                <img src="images/fish.png" alt="Gallery image 6" class="gallery__img">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+            </div>
             </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <p> My projects range from Coding, jewelry, and graphic design. Take a look: </p>
-        <p> <strong>coding projects:</strong></p>
-
-        <div class="container">
-            <div class="exhibit">
-                <figure class="gallery__item gallery__item--7">
-                    <img src="images/game.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--8">
-                    <img src="images/spaceGame.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                <strong>Projects</strong>
                 
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <section>
+                    <p> My projects range from Coding, jewelry, and graphic design. Take a look: </p>
+                    <p> <strong>coding projects:</strong></p>
+
+                    <div class="container">
+                        <div class="exhibit">
+                            <figure class="gallery__item gallery__item--7">
+                                <img src="images/game.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--8">
+                                <img src="images/spaceGame.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            
+                        </div>
+                    </div>
+
+                    <p> <strong>jewelry:</strong></p>
+
+                    <div class="container">
+                        <div class="exhibit">
+                            <figure class="gallery__item gallery__item--7">
+                                <img src="images/ring.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--8">
+                                <img src="images/jewelry2.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            
+                        </div>
+                    </div>
+
+                    <p> <strong>graphic design:</strong></p>
+
+                    <div class="container">
+                        <div class="exhibit">
+                            <figure class="gallery__item gallery__item--7">
+                                <img src="images/watch.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            <figure class="gallery__item gallery__item--8">
+                                <img src="images/abstraction.png" alt="Gallery image 1" class="gallery__img">
+                            </figure>
+                            
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
             </div>
         </div>
-
-        <p> <strong>jewelry:</strong></p>
-
-        <div class="container">
-            <div class="exhibit">
-                <figure class="gallery__item gallery__item--7">
-                    <img src="images/ring.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--8">
-                    <img src="images/jewelry2.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Contact</strong>
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>Phone: </strong>440-821-3216     
+                <strong>Email: </strong>dylanstrnad@outlook.com
+            </div>
             </div>
         </div>
+    </div>
 
-        <p> <strong>graphic design:</strong></p>
-
-        <div class="container">
-            <div class="exhibit">
-                <figure class="gallery__item gallery__item--7">
-                    <img src="images/watch.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                <figure class="gallery__item gallery__item--8">
-                    <img src="images/abstraction.png" alt="Gallery image 1" class="gallery__img">
-                </figure>
-                
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p> If you would like to contact me, please use the following information below:</p>
-        <p> <strong>Phone:</strong>440-821-3216</p>
-        <p> <strong>Email:</strong>dylanstrnad@outlook.com</p>
-    </section>
-
-    <section>
-        <h2>Github Repository</h2>
-        <p> If you would like to contact me, please use the following information below:</p>
-        <p> <strong>Phone:</strong>440-821-3216</p>
-        <p> <strong>Email:</strong>dylanstrnad@outlook.com</p>
-    </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
