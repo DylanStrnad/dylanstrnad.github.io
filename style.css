@@ -19,6 +19,8 @@
 html {
   font-family: Raleway, sans-serif;
   color: var(--text-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -31,9 +33,16 @@ h1, h2, h3 {
 }
 
 nav {
-  margin: 1em auto 3em auto;
-  width: min(2000px, 100%);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* centers it horizontally */
+  width: min(2000px, 71%);
+  background-color: #4d9af1;
+  padding: 1em;
+  z-index: 1000;
 }
+
 
 nav ul{
   /* list-style-type: square; */
@@ -72,6 +81,7 @@ header, section{
   /* align-items: center; */
   /* flex-wrap: wrap; */
   gap: 3em;
+  margin-top: 2em;
 }
 
 header img{
